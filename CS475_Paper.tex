@@ -81,8 +81,28 @@ As with most aspects of the internet today, security is an issue that cannot be 
 \subsection{Vulnerabilities}
 There is no security built into the socket protocol. This means that all applications that use sockets must be designed to protect against any and all possible attack vectors. Some protections are given by host operating systems, however they are not all-inclusive and not always sufficient.
 
-\subsection{Exploits}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
+\subsubsection{No Built-In Security Measures}
+There is no security built into the socket protocol. This means that all applications that use sockets must be designed to protect against any and all possible attack vectors. Some protections are given by host operating systems, however they are not all-inclusive and not always sufficient. This results in inconsistent security practices among applications who utilize sockets and an inability to quickly fix a security problem as many organizations must act separately to solve any security concerns.
+
+At the Black Hat conference of 2009 a security researcher gave a presentation where they showed how simple it was to intercept Secure Socket Layer (SSL) traffic and compromise a user’s secret login data by performing a man-in-the-middle style attack\cite{17}. This traffic would be traveling across a socket from the user’s machine to the login server. Due to the fact that information traveling over sockets is not encrypted or otherwise protected by default. This researcher was able capture essentially all data that users were entering to the compromised website.
+
+The attack was only able to be carried out when users were moving from an unsecured http page to a secured https page to log into the compromised service. The researcher was then able to intercept and reroute traffic to their proxy server before directing the traffic to its original destination\cite{17}. If the socket protocol included ways to verify that traffic had not been intercepted on its way to a destination or encrypted all information sent over a socket by default, this attack would not be able to be carried out.
+
+\subsubsection{Blind Trust}
+Due to the fact that operating systems protect I/O devices from being directly accessed by applications, applications must trust that the host operating system is delivering data exactly as it appeared over the socket\cite{15}. This is typically not an issue, however in cases where the host operating system has been taken over by a malicious entity or otherwise compromised, problems quickly arise.
+
+Traditional computers and operating systems have no workable solution to this problem. Therefore, a new type of computer operating system called Proxos was developed by researchers at the University of Toronto with the specific goal of addressing this blind trust problem.
+
+\begin{figure}[htbp]
+    \centering
+    \centerline{\includegraphics[width=0.5\textwidth]{Figure1.png}}
+    \caption{Diagram of the Proxos System Architecture\cite{15}}
+    \label{Figure1}
+\end{figure}
+
+As can be seen in the above figure, this system architecture is made up of three or more Virtual Machines (VM). The Virtual Machine Master (VMM) would be responsible for overseeing all other virtual machines that operate on the system. It would also be responsible for allocating resources to each VM as they are created or destroyed\cite{15}. It is not a traditional operating system. It is only intended to manage hardware resources and respond to requests made to those resources. The Commodity Operating System (OS), the researchers used Linux, would be what we are used to today, the traditional user operating system. It would be allowed to run application as any other normal operating system would. The only difference is that it is not responsible for handling hardware resources and can only ask the VMM for the resources it needs\cite{15}.
+
+The main difference between Proxos and traditional computer systems lies in how it handles applications that want to have more security. These applications are given their own private VM with their own copy of the OS that can make trusted calls directly to the VMM and bypass a potentially compromised host operating system. Only the application is allowed in this private VM. Its application-trusted system calls are allowed to communicate directly with the VMM to get information directly from hardware resources……
 
 \subsection{Potential Solutions}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
