@@ -6,11 +6,12 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Paper Title}
+\title{Sockets}
 
 \author{\IEEEauthorblockN{Davis Mariotti}
 \IEEEauthorblockA{\textit{Computer Science Department} \\
@@ -34,138 +35,72 @@ ushrestha20@my.whitworth.edu}
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert
+Socket, IP Address, Port, Pipelines
 \end{IEEEkeywords}
 
 \section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
+Modern computer networks rely on many technologies to function efficiently and effectively. The complex system is made of many smaller components each functioning to facilitate communication between two computer endpoints. Among the smaller components is the socket.
 
-\section{Motivation/Problem Definition}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. Aenean luctus massa arcu, sed accumsan sapien molestie id. Duis sed hendrerit orci, viverra mollis diam. Mauris viverra eget dui at commodo. Curabitur cursus lacus vel nunc lacinia tincidunt. Curabitur ut libero quis justo mollis suscipit. In laoreet ex a risus vestibulum, nec fermentum leo dignissim. Quisque molestie neque vitae sollicitudin imperdiet.
+Non-common uses
 
-\section{Related Work}
+It is attackable?
 
-Integer at aliquet nisl, eget elementum libero. Cras sodales orci eget ipsum porta eleifend. In ac volutpat nibh. Fusce pellentesque metus id iaculis sollicitudin. Aliquam magna nulla, ultricies id tellus sed, interdum consequat mauris. Cras porta sed purus ut tincidunt. Morbi at mauris fermentum, efficitur tellus vitae, elementum tortor. Quisque laoreet, dui sed luctus bibendum, ligula lorem vulputate erat, eu rutrum nulla purus sit amet diam. Nullam sed aliquam lectus. Sed venenatis libero non ex venenatis luctus et eu eros. Ut eget venenatis ante. Pellentesque bibendum tortor nunc, a tristique leo lobortis sit amet. Donec justo dui, condimentum egestas lobortis non, sodales in sem. Integer pharetra sodales tincidunt. Pellentesque cursus magna sed dui dapibus consequat. Curabitur sed ornare ex, eget tincidunt neque.
+Can be used in creative ways
 
-\section{"Your Stuff"}
+Is it the best?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. Aenean luctus massa arcu, sed accumsan sapien molestie id. Duis sed hendrerit orci, viverra mollis diam. Mauris viverra eget dui at commodo. Curabitur cursus lacus vel nunc lacinia tincidunt. Curabitur ut libero quis justo mollis suscipit. In laoreet ex a risus vestibulum, nec fermentum leo dignissim. Quisque molestie neque vitae sollicitudin imperdiet.
 
-\section{Ease of Use}
+\section{Definition}
+A socket is not a physical piece of the computer, but rather, it is the idea that subdivisions can be made on the network interface to separate traffic and route it correctly to where it needs to go. A socket consists of an Internet Protocol (IP) address and a port number. It is commonly written in the form of 192.168.0.1:8080 (Goralski 52). Some port numbers, such as 80 and 443, are reserved for specific applications or communication types while others are free for application programmers to utilize. Both IP Addresses and port numbers are “managed” by many local organizations, however the \href{https://www.iana.org/}{Internet Assigned Numbers Authority} (IANA) is commonly regarded as one of the most accurate authority for reference purposes.
 
-\subsection{Maintaining the Integrity of the Specifications}
+\section{Uses}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
-The IEEEtran class file is used to format your paper and style the text. All margins, 
-column widths, line spaces, and text fonts are prescribed; please do not 
-alter them. You may note peculiarities. For example, the head margin
-measures proportionately more than is customary. This measurement 
-and others are deliberate, using specifications that anticipate your paper 
-as one part of the entire proceedings, and not as an independent document. 
-Please do not revise any of the current designations.
+\subsection{General Programming}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros.
 
-\section{Prepare Your Paper Before Styling}
-Before you begin to format your paper, first write and save the content as a 
-separate text file. Complete all content and organizational editing before 
-formatting. Please note sections \ref{AA}--\ref{SCM} below for more information on 
-proofreading, spelling and grammar.
+\subsection{Interprocess Communication}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros.
 
-Keep your text and graphic files separate until after the text has been 
-formatted and styled. Do not number text heads---{\LaTeX} will do that 
-for you.
+\subsection{Internet Applications}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
 
-\subsection{Abbreviations and Acronyms}\label{AA}
-Define abbreviations and acronyms the first time they are used in the text, 
-even after they have been defined in the abstract. Abbreviations such as 
-IEEE, SI, MKS, CGS, ac, dc, and rms do not have to be defined. Do not use 
-abbreviations in the title or heads unless they are unavoidable.
+\subsection{Distributed Computing}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
 
-\subsection{Units}
-\begin{itemize}
-\item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as ``3.5-inch disk drive''.
-\item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
-\item Do not mix complete spellings and abbreviations of units: ``Wb/m\textsuperscript{2}'' or ``webers per square meter'', not ``webers/m\textsuperscript{2}''. Spell out units when they appear in text: ``. . . a few henries'', not ``. . . a few H''.
-\item Use a zero before decimal points: ``0.25'', not ``.25''. Use ``cm\textsuperscript{3}'', not ``cc''.)
-\end{itemize}
+\section{Master/Slave Relationships}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
 
-\subsection{Equations}
-Number equations consecutively. To make your 
-equations more compact, you may use the solidus (~/~), the exp function, or 
-appropriate exponents. Italicize Roman symbols for quantities and variables, 
-but not Greek symbols. Use a long dash rather than a hyphen for a minus 
-sign. Punctuate equations with commas or periods when they are part of a 
-sentence, as in:
-\begin{equation}
-a+b=\gamma\label{eq}
-\end{equation}
+\section{Security}
+As with most aspects of the internet today, security is an issue that cannot be ignored when discussing web sockets. Even though the standard has been around for decades, it has not been reliably or adequately updated to protect against modern security threats. This is due to many complicating factors that are outside the scope of this paper. However, below are some examples of both commonly exploited and uncommonly exploited vulnerabilities in the socket communication protocol as well as potential experimental solutions.
 
-Be sure that the 
-symbols in your equation have been defined before or immediately following 
-the equation. Use ``\eqref{eq}'', not ``Eq.~\eqref{eq}'' or ``equation \eqref{eq}'', except at 
-the beginning of a sentence: ``Equation \eqref{eq} is . . .''
+\subsection{Vulnerabilities}
+There is no security built into the socket protocol. This means that all applications that use sockets must be designed to protect against any and all possible attack vectors. Some protections are given by host operating systems, however they are not all-inclusive and not always sufficient.
 
-\subsection{Some Common Mistakes}\label{SCM}
-\begin{itemize}
-\item The word ``data'' is plural, not singular.
-\item The subscript for the permeability of vacuum $\mu_{0}$, and other common scientific constants, is zero with subscript formatting, not a lowercase letter ``o''.
-\item In American English, commas, semicolons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
-\item A graph within a graph is an ``inset'', not an ``insert''. The word alternatively is preferred to the word ``alternately'' (unless you really mean something that alternates).
-\item Do not use the word ``essentially'' to mean ``approximately'' or ``effectively''.
-\item In your paper title, if the words ``that uses'' can accurately replace the word ``using'', capitalize the ``u''; if not, keep using lower-cased.
-\item Be aware of the different meanings of the homophones ``affect'' and ``effect'', ``complement'' and ``compliment'', ``discreet'' and ``discrete'', ``principal'' and ``principle''.
-\item Do not confuse ``imply'' and ``infer''.
-\item The prefix ``non'' is not a word; it should be joined to the word it modifies, usually without a hyphen.
-\item There is no period after the ``et'' in the Latin abbreviation ``et al.''.
-\item The abbreviation ``i.e.'' means ``that is'', and the abbreviation ``e.g.'' means ``for example''.
-\end{itemize}
-An excellent style manual for science writers is \cite{b7}.
+\subsection{Exploits}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
 
-\subsection{Figures and Tables}
-\paragraph{Positioning Figures and Tables} Place figures and tables at the top and 
-bottom of columns. Avoid placing them in the middle of columns. Large 
-figures and tables may span across both columns. Figure captions should be 
-below the figures; table heads should appear above the tables. Insert 
-figures and tables after they are cited in the text. Use the abbreviation 
-``Fig.~\ref{fig}'', even at the beginning of a sentence.
+\subsection{Potential Solutions}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
 
-\begin{table}[htbp]
-\caption{Table Type Styles}
-\begin{center}
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{Table}&\multicolumn{3}{|c|}{\textbf{Table Column Head}} \\
-\cline{2-4} 
-\textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
-\hline
-copy& More table copy$^{\mathrm{a}}$& &  \\
-\hline
-\multicolumn{4}{l}{$^{\mathrm{a}}$Sample of a Table footnote.}
-\end{tabular}
-\label{tab1}
-\end{center}
-\end{table}
+\section{Experimental Uses}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
 
-\begin{figure}[htbp]
-% \centerline{\includegraphics{fig1.png}}
-\caption{Example of a figure caption.}
-\label{fig}
-\end{figure}
+\section{Comparison}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
 
-Figure Labels: Use 8 point Times New Roman for Figure labels. Use words 
-rather than symbols or abbreviations when writing Figure axis labels to 
-avoid confusing the reader. As an example, write the quantity 
-``Magnetization'', or ``Magnetization, M'', not just ``M''. If including 
-units in the label, present them within parentheses. Do not label axes only 
-with units. In the example, write ``Magnetization (A/m)'' or ``Magnetization 
-\{A[m(1)]\}'', not just ``A/m''. Do not label axes with a ratio of 
-quantities and units. For example, write ``Temperature (K)'', not 
-``Temperature/K''.
+\subsection{Pipes}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
+
+\subsection{Remote Procedure Calls (RPC)}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
+
+\section{Conclusion}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
 
 \section*{References}
 
