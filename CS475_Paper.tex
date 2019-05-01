@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
-\usepackage{hyperref}
+\usepackage{url}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -55,7 +55,7 @@ Is it the best?
 
 
 \section{Definition}
-A socket is not a physical piece of the computer, but rather, it is the idea that subdivisions can be made on the network interface to separate traffic and route it correctly to where it needs to go. A socket consists of an Internet Protocol (IP) address and a port number. It is commonly written in the form of 192.168.0.1:8080 (Goralski 52). Some port numbers, such as 80 and 443, are reserved for specific applications or communication types while others are free for application programmers to utilize. Both IP Addresses and port numbers are “managed” by many local organizations, however the \href{https://www.iana.org/}{Internet Assigned Numbers Authority} (IANA) is commonly regarded as one of the most accurate authority for reference purposes.
+A socket is not a physical piece of the computer, but rather, it is the idea that subdivisions can be made on the network interface to separate traffic and route it correctly to where it needs to go. A socket consists of an Internet Protocol (IP) address and a port number. It is commonly written in the form of 192.168.0.1:8080 \cite{6}. Some port numbers, such as 80 and 443, are reserved for specific applications or communication types while others are free for application programmers to utilize. Both IP Addresses and port numbers are “managed” by many local organizations, however the \url{https://www.iana.org/}{Internet Assigned Numbers Authority} (IANA) is commonly regarded as one of the most accurate authority for reference purposes.
 
 \section{Uses}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
@@ -102,35 +102,44 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque 
 \section{Conclusion}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque mauris tellus, a facilisis metus congue et. Nullam gravida laoreet justo, auctor rutrum nibh porttitor nec. Suspendisse potenti. Nam in tincidunt nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi enim ex, dapibus efficitur lorem sit amet, maximus dictum eros. 
 
-\section*{References}
-
-Please number citations consecutively within brackets \cite{b1}. The 
-sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
-number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
-the beginning of a sentence: ``Reference \cite{b3} was the first $\ldots$''
-
-Number footnotes separately in superscripts. Place the actual footnote at 
-the bottom of the column in which it was cited. Do not put footnotes in the 
-abstract or reference list. Use letters for table footnotes.
-
-Unless there are six authors or more give all authors' names; do not use 
-``et al.''. Papers that have not been published, even if they have been 
-submitted for publication, should be cited as ``unpublished'' \cite{b4}. Papers 
-that have been accepted for publication should be cited as ``in press'' \cite{b5}. 
-Capitalize only the first word in a paper title, except for proper nouns and 
-element symbols.
-
-For papers published in translation journals, please give the English 
-citation first, followed by the original foreign-language citation \cite{b6}.
-
 \begin{thebibliography}{00}
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+\bibitem{1}Arabo, Abdullahi. Distributed IDS using Agents: An Agent-Based Detection System to Detect Passive and Active Threats to a Network. Reading: Academic Conferences International Limited, 2019. ProQuest. Web. 10 Apr. 2019.
+ 
+\bibitem{2}Bailey, Kimberly Tekavec. AF UNIX Socket Across Systems in the Same Computer on Computer Systems that Support Multiple Operating System Images. International Business Machines Corp, assignee. Patent US20080155103A1. 2008.
+     
+\bibitem{3}de, la C., et al. "Checking the Reliability of Socket Based Communication Software." International Journal on Software Tools for Technology Transfer 11.5 (2009): 359-74. ProQuest. Web. 10 Apr. 2019.
+     
+\bibitem{4}Ganger, Gregory R., et al. "Fast and Flexible Application-Level Networking on Exokernel Systems." ACM Transactions on Computer Systems 20.1 (2002): 49. ProQuest. Web. 10 Apr. 2019.
+     
+\bibitem{5}Gay, Warren W. “Linux Socket Programming: By Example”. Que Corp. Indianapolis, IN, USA, 2000.
+     
+\bibitem{6}Goralski, Walter. The Illustrated Network : How TCP/IP Works in a Modern Network, Elsevier Science \& Technology, 2008. ProQuest Ebook Central, \url{https://ebookcentral.proquest.com/lib/whitworth/detail.action?docID=405967}{https://ebookcentral.proquest.com/lib/whitworth/detail.action?docID=405967}.
+     
+\bibitem{7}Kalita, Limi. “Socket Programming”. International Journal of Computer Science and Information Technologies, Vol. 5 (3), 2014, 4802-4807.
+     
+\bibitem{8}Law, KL Eddie, and Roy Leung. "A design and implementation of active network socket programming." Microprocessors and Microsystems 27.5-6 (2003): 277-284.
+     
+\bibitem{9}Leffler, Samuel J., et al. “An Advanced 4.4BSD Interprocess Communication Tutorial”. University of California, Berkeley. 1986.
+     
+\bibitem{10}Matthew, Neil, and Richard Stones. Beginning linux programming. John Wiley \& Sons, 2008.
+     
+\bibitem{11}Mitchell, Mark, Jeffrey Oldham, and Alex Samuel. Advanced linux programming. New Riders Publishing, 2001.
+     
+\bibitem{12}Mohamed, Nader, et al. “A USER-LEVEL SOCKET LAYER OVER MULTIPLE PHYSICAL NETWORK INTERFACES.” ProQuest, University of Nebraska – Lincoln, \url{middleware-tech.net/papers/PDCS2002_IASTED_MuniSocket.pdf}.
+     
+\bibitem{13}Oliver, Stephen L., et al. “Scheduling task parallelism on multi-socket multicore systems”. Proceedings of the 1st International Workshop on Runtime and Operating Systems for Supercomputers. Tucson, Arizona, 2011, 49-56.
+     
+\bibitem{14}Reed, Dennis F., et al. “Interprocess communications system and method utilizing shared memory for message transfer and datagram sockets for message control”. US5652885A, United States Patent and Trademark Office. 1993.
+     
+\bibitem{15}Richard Ta-Min, Lionel Litty, and David Lie. 2006. Splitting interfaces: making trust between applications and operating systems configurable. In Proceedings of the 7th symposium on Operating systems design and implementation (OSDI '06). USENIX Association, Berkeley, CA, USA, 279-292.
+     
+\bibitem{16}Sawant, Abhijit A., and B. B. Meshram. "Network programming in Java using Socket." Network 3.1 (2013).
+     
+\bibitem{17}Sheble, Nicholas. "Black Hat Conference: Socket to Me." Intech 56.4 (2009): 9. ProQuest. Web. 10 Apr. 2019.
+     
+\bibitem{18}Stevens, W. Richard, and Stephen A. Rago. Advanced programming in the UNIX environment. Addison-Wesley, 2008.
+     
+\bibitem{19}Xue, Ming and Changjun Zhu. “The Socket Programming and Software Design for Communication Based on Client/Server”. 2009 Pacific-Asia Conference on Circuits, Communications and Systems. IEEE. 2009.    
 \end{thebibliography}
 
 \end{document}
