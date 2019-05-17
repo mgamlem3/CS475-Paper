@@ -82,7 +82,7 @@ Sockets can be used for interprocess communication where all data transfer occur
 Distributed computing implementations often make heavy use of sockets to transfer data and instructions between nodes on a network. Distributed systems are characterized by a network of multiple computers that can operate as one large system \cite{lin1995distributed}. In the past, this type of system would have been impossible due to the slow speeds of data transfer over Ethernet cables, but thanks to the increase in data transfer speeds in newer cables, it is now possible to distribute the workload of a process to multiple computers, which can often be less expensive than creating one very powerful computer. Distributed systems can be used to perform computationally heavy scientific calculations, or even to perform bitcoin mining, a task that audits previous transactions made with currencies. Distributed systems are generally organized in either master-slave relationships, or peer-to-peer relationships.
 
 \subsection{Master Slave Relationships}
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \centerline{\includegraphics[width=0.5\textwidth]{Figure1.png}}
     \caption{Diagram of basic Master Slave Data Flow \cite{ramaekers}}
@@ -201,9 +201,12 @@ Remote Procedure Call (RPC) is a protocol that can be used to request a service 
 \begin{figure}[H]
     \centering
     \centerline{\includegraphics[width=0.5\textwidth]{Figure8.png}}
-    \caption{Results of load balancing test for MuniSocket \cite{mohamed2002user}}
+    \caption{Results of load balancing test for MuniSocket \cite{geeks}}
     \label{Figure8}
 \end{figure}
+
+\section{Conclusion}
+Clearly sockets are deeply embedded into computer systems around the globe. Without them, modern life would look very different. Perhaps because of their widespread use and because of their potential to be a single point of failure for internet communication they have been targeted by many different styles of attacks. This makes sockets both essential and a thorn in the side of programmers everywhere. As was illustrated in this paper, there are both simple and innovative solutions to repair the shortcomings of sockets. Proxos seems to be the most promising due to its reliance on the traditional socket implementation and innovative sectioning approach to information flow. All other solutions seem to have the downfall of not being backward compatible with the existing socket implementation. While it is a monumental task, it seems as though it is time to address the aging socket standard. With security and privacy being a major concern in today’s climate, the socket is an attack vector that is too easy to exploit. New security features such as encryption, user verification, and measures to ensure message integrity are essential. Without them, we will be forced to continue trying to stop exploits without addressing the main problem.
 
 \bibliography{workscited.bib}
 \bibliographystyle{ieeetr}
